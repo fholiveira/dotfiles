@@ -1,0 +1,63 @@
+[submodule "vim/bundle/colorizer"]
+	path = vim/bundle/colorizer
+	url = git@github.com:lilydjwg/colorizer.git
+[submodule "vim/bundle/Vim-Jinja2-Syntax"]
+	path = vim/bundle/Vim-Jinja2-Syntax
+	url = git@github.com:Glench/Vim-Jinja2-Syntax.git
+[submodule "vim/bundle/ctrlp.vim"]
+	path = vim/bundle/ctrlp.vim
+	url = git@github.com:kien/ctrlp.vim.git
+[submodule "vim/bundle/emmet-vim"]
+	path = vim/bundle/emmet-vim
+	url = git@github.com:mattn/emmet-vim.git
+[submodule "vim/bundle/haskell-vim"]
+	path = vim/bundle/haskell-vim
+	url = git@github.com:neovimhaskell/haskell-vim.git
+[submodule "vim/bundle/jedi-vim"]
+	path = vim/bundle/jedi-vim
+	url = git@github.com:davidhalter/jedi-vim.git
+[submodule "vim/bundle/rainbow_parentheses.vim"]
+	path = vim/bundle/rainbow_parentheses.vim
+	url = git@github.com:kien/rainbow_parentheses.vim.git
+[submodule "vim/bundle/vim-clojure-static"]
+	path = vim/bundle/vim-clojure-static
+	url = git@github.com:guns/vim-clojure-static.git
+[submodule "vim/bundle/vim-coffee-script"]
+	path = vim/bundle/vim-coffee-script
+	url = git@github.com:kchmck/vim-coffee-script.git
+[submodule "vim/bundle/vim-css3-syntax"]
+	path = vim/bundle/vim-css3-syntax
+	url = git@github.com:hail2u/vim-css3-syntax.git
+[submodule "vim/bundle/vim-go"]
+	path = vim/bundle/vim-go
+	url = git@github.com:fatih/vim-go.git
+[submodule "vim/bundle/vim-less"]
+	path = vim/bundle/vim-less
+	url = git@github.com:groenewege/vim-less.git
+[submodule "vim/bundle/vim-markdown"]
+	path = vim/bundle/vim-markdown
+	url = git@github.com:plasticboy/vim-markdown.git
+[submodule "vim/bundle/vim-repeat"]
+	path = vim/bundle/vim-repeat
+	url = git@github.com:tpope/vim-repeat.git
+[submodule "vim/bundle/vim-sexp"]
+	path = vim/bundle/vim-sexp
+	url = git@github.com:guns/vim-sexp.git
+[submodule "vim/bundle/vim-sexp-mappings-for-regular-people"]
+	path = vim/bundle/vim-sexp-mappings-for-regular-people
+	url = git@github.com:tpope/vim-sexp-mappings-for-regular-people.git
+[submodule "vim/bundle/vim-surround"]
+	path = vim/bundle/vim-surround
+	url = git@github.com:tpope/vim-surround.git
+[submodule "vim/bundle/vim-sensible"]
+	path = vim/bundle/vim-sensible
+	url = git@github.com:tpope/vim-sensible.git
+[submodule "vim/bundle/vim-pathogen"]
+	path = vim/bundle/vim-pathogen
+	url = git@github.com:tpope/vim-pathogen.git
+[submodule "vim/bundle/vim-distinguished"]
+	path = vim/bundle/vim-distinguished
+	url = git@github.com:Lokaltog/vim-distinguished.git
+[submodule "vim/bundle/hasksyn"]
+	path = vim/bundle/hasksyn
+	url = git@github.com:travitch/hasksyn.git
