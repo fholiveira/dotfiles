@@ -16,6 +16,10 @@ autocmd FileType go setlocal ai ts=4 sta fo=croql
 autocmd FileType python,c,ch,cs,haskell setlocal ai sw=4 ts=4 sta et fo=croql
 autocmd FileType coffee,html,css,json,stylus,jinja,javascript,sh,less setlocal ai sw=2 ts=2 sta et fo=croql
 
+" Hardmode config
+autocmd VimEnter,BufNewFile,BufReadPost * silent! call HardMode()
+nnoremap <leader>h <Esc>:call ToggleHardMode()<CR>
+
 " Coisas uteis
 set history=700
 set undolevels=700
