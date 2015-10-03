@@ -16,6 +16,11 @@ autocmd FileType go setlocal ai ts=4 sta fo=croql
 autocmd FileType python,c,ch,cs,haskell setlocal ai sw=4 ts=4 sta et fo=croql
 autocmd FileType coffee,html,css,json,stylus,jinja,javascript,sh,less setlocal ai sw=2 ts=2 sta et fo=croql
 
+let mapleader = "\<Space>"
+
+nnoremap <Leader>o :CtrlP<CR>
+nnoremap <Leader>w :w<CR>
+
 " Hardmode config
 autocmd VimEnter,BufNewFile,BufReadPost * silent! call HardMode()
 nnoremap <leader>h <Esc>:call ToggleHardMode()<CR>
@@ -59,3 +64,17 @@ colorscheme distinguished
 
 set number
 set colorcolumn=81
+
+" Configurações específicas por SO
+let os=substitute(system('uname'), '\n', '', '')
+if os == 'Darwin' || os == 'Mac'
+    source ~/.dotfiles/platforms/osx/vimrc
+elseif os == 'Linux'
+    source ~/.dotfiles/platforms/linux/vimrc
+endif
+
+"Ctrl-P maps
+let g:ctrlp_prompt_mappings = {
+    \ 'AcceptSelection("e")': ['<c-e>'],
+    \ 'AcceptSelection("t")': ['<cr>', '<2-LeftMouse>'],
+    \ }

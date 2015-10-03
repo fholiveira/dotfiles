@@ -1,0 +1,7 @@
+" Mapeando o copy/paste do sistema 
+vmap <Leader>y "+y
+vmap <Leader>d "+d
+nmap <Leader>p "*p
+nmap <Leader>P "*p
+vmap <Leader>p "*p
+vmap <Leader>P "*p
