@@ -1,0 +1,15 @@
+# vim: filetype=sh
+
+if [ -f $(brew --prefix)/etc/bash_completion ]; then
+  $(brew --prefix)/etc/bash_completion
+fi
+
+# configure Z
+source `brew --prefix`/etc/profile.d/z.sh
+
+#configure gpg-agent
+if [ -f "${HOME}/.gpg-agent-info" ]; then
+  . "${HOME}/.gpg-agent-info"
+  export GPG_AGENT_INFO
+  export SSH_AUTH_SOCK
+fi

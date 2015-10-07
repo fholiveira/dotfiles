@@ -1,0 +1,5 @@
+# vim: filetype=sh
+alias ls='ls --file-type --group-directories-first --color=auto'
+alias rm='rm --interactive' 
+alias mv='mv --interactive' 
+alias cp='cp --interactive' 
