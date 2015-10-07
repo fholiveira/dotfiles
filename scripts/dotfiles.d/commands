@@ -1,0 +1,28 @@
+# vim: filetype=sh
+
+function install() {
+    local local_dotfiles=$DOTFILES/local
+    local paths=(
+      "bash_profile profile"
+      "bashrc"
+      "gitconfig"
+      "tmux.conf"
+      "vim"
+      "vimrc")
+
+    echo "create symlinks"
+    for index in ${!paths[*]}; do
+      local file=(${paths[$index]})
+
+      local from=${file[0]}
+      local to=".${file[1]:-${file[0]}}"
+    
+      if [ -f $local_dotfiles/$from ]; then
+        echo "  local/$from -> ~/$to"
+        ln -sf "$local_dotfiles/$from" "$HOME/$to"
+      else
+        echo "  $from -> ~/$to"
+        ln -sf "$DOTFILES/$from" "$HOME/$to"
+      fi
+    done
+}

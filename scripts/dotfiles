@@ -1,0 +1,14 @@
+# vim: filetype=sh
+
+DOTSCRIPTS=$DOTFILES/scripts/dotfiles.d
+
+source $DOTSCRIPTS/commands
+
+case $1 in
+  install)
+    install
+    ;;
+  -h|--help|*)
+    cat $DOTSCRIPTS/help
+    ;;
+esac

@@ -1,0 +1,11 @@
+Fernando Oliveira's dotfiles.
+
+Usage:
+  dotfiles (install | update | browse)
+  dotfiles vim [--add=<plugin> | --delete=<plugin-name>] 
+  dotfiles -h | --help
+
+Options:
+  -a --add=<plugin>          Add vim plugin from github.
+  -D --delete=<plugin-name>  Remove plugin.  
+  -h --help                  Show this screen.
