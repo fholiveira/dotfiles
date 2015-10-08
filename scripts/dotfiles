@@ -1,14 +1,10 @@
 # vim: filetype=sh
 
-DOTSCRIPTS=$DOTFILES/scripts/dotfiles.d
-
+export DOTSCRIPTS=$DOTFILES/scripts/dotfiles.d
 source $DOTSCRIPTS/commands
 
 case $1 in
-  install)
-    install
-    ;;
-  -h|--help|*)
-    cat $DOTSCRIPTS/help
-    ;;
+  install)     install ;;
+  update)      update ;;
+  -h|--help|*) cat $DOTSCRIPTS/help ;;
 esac

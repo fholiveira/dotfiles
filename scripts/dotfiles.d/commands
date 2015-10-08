@@ -33,3 +33,16 @@ function install() {
     fi
   done
 }
+
+function update() {
+  cd $DOTFILES
+
+  git stash
+  git submodule foreach git reset --hard HEAD
+  git submodule foreach git clean -f
+
+  git pull --recurse-submodules
+  git submodule update --recursive
+
+  git stash apply
+}
