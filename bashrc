@@ -3,8 +3,7 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
-source ~/.dotfiles/dotfilesrc
-source ~/.dotfiles/bash_aliases
+source $DOTFILES/bash_aliases
 
 #Disable password dialog in git
 unset SSH_ASKPASS
@@ -31,12 +30,6 @@ function define_prompt() {
 
 eval "$(thefuck --alias)"
 
-case "$OSTYPE" in
-  darwin*)  source ~/.dotfiles/platforms/osx/bashrc ;;
-  linux*)   source ~/.dotfiles/platforms/linux/bashrc ;;
-  bsd*)     ;;
-  *)        ;;
-esac
+source $DOTFILES/platforms/current/bashrc
 
-#export PROMPT_COMMAND='export PS1=$(smartprompt)'
 export PROMPT_COMMAND='define_prompt'

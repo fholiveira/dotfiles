@@ -66,12 +66,7 @@ set number
 set colorcolumn=81
 
 " Configurações específicas por SO
-let os=substitute(system('uname'), '\n', '', '')
-if os == 'Darwin' || os == 'Mac'
-    source ~/.dotfiles/platforms/osx/vimrc
-elseif os == 'Linux'
-    source ~/.dotfiles/platforms/linux/vimrc
-endif
+source $DOTFILES/platforms/current/vimrc
 
 "Ctrl-P maps
 let g:ctrlp_prompt_mappings = {

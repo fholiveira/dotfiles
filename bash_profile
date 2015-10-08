@@ -12,11 +12,26 @@ export PATH=$PATH:/usr/local/heroku/bin    #Heroku
 
 export GEM_HOME=~/.gem/ruby/2.1.0/bin
 
-case "$OSTYPE" in
-  darwin*)  source ~/.dotfiles/platforms/osx/bash_profile ;;
-  linux*)   source ~/.dotfiles/platforms/linux/bash_profile ;;
-  bsd*)     ;;
-  *)        ;;
-esac
+if [ -f ~/.dotfilesrc ]; then
+  source ~/.dotfilesrc
+fi
 
+if [ -z "$DOTFILES" ]; then
+  export DOTFILES=~/.dotfiles
+fi
+
+function dotfiles() {
+  chmod +x $DOTFILES/scripts/dotfiles
+
+  case $1 in
+    browse)
+      cd $DOTFILES
+    ;;
+    *)
+      $DOTFILES/scripts/dotfiles "${@:1}" 
+    ;;
+  esac
+}
+
+source $DOTFILES/platforms/current/bash_profile
 source ~/.bashrc

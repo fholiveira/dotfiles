@@ -9,9 +9,4 @@ alias such='git commit -am'
 alias very='git'
 alias fuck='sudo $(history -p \!\!)' 
 
-case "$OSTYPE" in
-  darwin*)  source ~/.dotfiles/platforms/osx/bash_aliases ;;
-  linux*)   source ~/.dotfiles/platforms/linux/bash_aliases ;;
-  bsd*)     ;;
-  *)        ;;
-esac
+source $DOTFILES/platforms/current/bash_aliases

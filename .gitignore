@@ -2,3 +2,5 @@
 .DS_Store
 local/
 vim/.netrwhist
+platforms/current
+platforms/current/
